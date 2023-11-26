@@ -1,0 +1,33 @@
+header {
+    /* background-image: url("../assets/Galaxia.png");
+    background-size: cover; */
+    background-color: var(--roxo-escuro);
+    position: relative;
+    color: var(--amarelo-principal);
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 5em;
+}
+
+.cabecalho__conteudo {
+    text-align: right;
+    padding-right: 200px;   
+}
+
+.cabecalho__titulo {
+    font-size: 4em;
+    margin-bottom: -36px;
+}
+
+.cabecalho__texto {
+    font-size: 1.7em;
+}
+
+.cabecalho__texto__negrito {
+    color: var(--branco);
+}

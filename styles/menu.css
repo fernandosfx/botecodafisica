@@ -1,0 +1,46 @@
+.menu {
+    background-color: var(--cinza);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu__links__link, .menu__links__home {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 13px 2em;
+
+}
+
+.menu__links__home {
+    color: var(--preto);
+    background-color: var(--amarelo-principal);
+}
+
+.menu__links__link:hover {
+    background-color: var(--branco);
+    color: var(--cinza);
+}
+
+.menu__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 1.5em;
+    padding: 0.7em;
+    width: 30%;
+    margin-right: 10em;
+}
+
+.menu__pesquisa::placeholder {
+    /* font-family: var(--fonte-principal); */
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url("../assets/Lupa.svg") no-repeat;
+    background-position: 1em;
+}
