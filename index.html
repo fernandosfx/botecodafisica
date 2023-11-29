@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boteco da Física</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/Logo.png" type="image/png">
 </head>
 <body>
     <header class="cabecalho">
@@ -15,7 +16,22 @@
         </div>
     </header>
 
-    <section class="menu">
+    <section class="menu-barra">
+        <div class="menu__suspenso">
+            <input type="checkbox" id="menu" class="menu__botao">
+            <label for="menu">
+                <span class="menu_hamburguer menu__imagem"></span>
+            </label>
+            <ul class="lista_menu">
+                <li class="lista_menu__titulo">Páginas</li>
+                <li class="lista_menu__item"><a href="#" class="lista_menu__link">Home</a></li>
+                <li class="lista_menu__item"><a href="#" class="lista_menu__link">Materiais</a></li>
+                <li class="lista_menu__item"><a href="#" class="lista_menu__link">Blog</a></li>
+                <li class="lista_menu__item"><a href="#" class="lista_menu__link">Cursos</a></li>
+                <li class="lista_menu__item"><a href="#" class="lista_menu__link">Sobre o adm</a></li>
+            </ul>
+        </div>
+
         <div class="menu__links">
             <a href="#" class="menu__links__home">Home</a>
             <a href="#" class="menu__links__link">Materiais</a>
@@ -23,7 +39,7 @@
             <a href="#" class="menu__links__link">Cursos</a>
             <a href="#" class="menu__links__link">Sobre o adm</a>
         </div>
-        <input type="search" class="menu__pesquisa" placeholder="O que você está buscando hoje?">
+        <input type="search" class="menu__pesquisa" placeholder="O que está buscando?">
     </section>
 
     <section class="apresentacao">
@@ -35,7 +51,7 @@
     </section>
 
     <section class="conteudo">
-        <h2 class="destaques__titulo">DESTAQUES</h2>
+        <h2 class="conteudo__titulo">DESTAQUES</h2>
         <div class="conteudo__destaques">
             <div class="destaques__esquerda">
                 <div class="card-1">
@@ -62,10 +78,28 @@
                 </div>
             </div>
         </div>
+
+        <h2 class="conteudo__titulo"><a href="#" class="conteudo__titulo__link">MATERIAIS</a></h2>
+        <div class="conteudo__materiais">
+            <h3 class="materiais__titulo">Cursos</h3>
+            <p class="materiais__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit justo. Nullam auctor dolor eu libero scelerisque, eget aliquam dui sollicitudin. Integer vel eros vel arcu fermentum lobortis. Vivamus in metus sed odio aliquam feugiat nec nec urna.</p>
+            
+            <div class="materiais__cursos">
+                <a href="#" class="materiais__lista__link">Física Básica</a>
+                <a href="#" class="materiais__lista__link">Cálculo no ITA</a>
+                <a href="#" class="materiais__lista__link">Vestibulares</a>
+            </div>
+
+            <h3 class="materiais__titulo">Apostilas</h3>
+            <p class="materiais__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit justo. Nullam auctor dolor eu libero scelerisque, eget aliquam dui sollicitudin. Integer vel eros vel arcu fermentum lobortis. Vivamus in metus sed odio aliquam feugiat nec nec urna.</p>
+            
+            <h3 class="materiais__titulo">Comunidade</h3>
+            <p class="materiais__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit justo. Nullam auctor dolor eu libero scelerisque, eget aliquam dui sollicitudin. Integer vel eros vel arcu fermentum lobortis. Vivamus in metus sed odio aliquam feugiat nec nec urna.</p>
+        </div>
     </section>
 
     <footer class="rodape">
-        <p>Design por Fernando Fernandes - Boteco da Física</p>
+        <p class="rodape__texto">Design por Fernando Fernandes - Boteco da Física</p>
     </footer>
 </body>
 </html>

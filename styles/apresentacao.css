@@ -1,21 +1,23 @@
 .apresentacao{
     background-image: url("../assets/Ceu Noturno.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .apresentacao__bem-vindo {
-    padding: 10em 5em;
+    padding: 10em 3em;
     color: var(--branco);
     text-align: center;
 }
 
 .apresentacao__bem-vindo__titulo {
-    font-size: 3em;
+    font-size: 64px;
 }
 
 .apresentacao__bem-vindo__texto {
-    font-size: 1.5em;
-    margin: 1em 10em 7em 10em;
+    font-size: 24px;
+    margin: 7em;
+    margin-top: 2em;
     color: var(--amarelo-principal);
 }
 
@@ -29,7 +31,28 @@
 }
 
 .apresentacao__bem-vindo__botao:hover {
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     box-shadow: 0px 0px 5px 5px var(--roxo-escuro);
     background: linear-gradient(98deg, var(--roxo-principal) 35.49%, var(--roxo-escuro) 165.37%);
+}
+
+@media screen and (max-width: 1024px) {
+    .apresentacao__bem-vindo {
+        padding: 5em 0;
+    }
+
+    .apresentacao__bem-vindo__titulo {
+        font-size: 32px;
+    }
+
+    .apresentacao__bem-vindo__texto {
+        font-size: 12px;
+        margin: 2em 3.5em 5em 3.5em;
+    }
+
+    .apresentacao__bem-vindo__botao {
+        font-size: 16px;
+        padding: 0.7em 1em;
+        border-radius: 8px;
+    }
 }
